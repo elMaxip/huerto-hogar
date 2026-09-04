@@ -1,8 +1,11 @@
 {
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
   },
+  "type": "module",
   "scripts": {
-    "build": "tsc && node scripts/copy-assets.js"
+    "dev": "vite",
+    "build": "vite build"
   }
 }

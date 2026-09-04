@@ -8,4 +8,4 @@ Personalmente prefiero usar TS en vez de JS. No creo que haya problemas para el 
 
 ## Cómo correr el proyecto
 
-Al no usar un framework como React o Angular, no hay un comando para correr un servidor local que transpila el código TS a JS y copie los archivos html y css a `/dist` a de forma automática. Hay que ejecutar el comando `pnpm run build` para transpilarlo y copiar de forma automática. En el `tsconfig.json` dice que el código TS debe ir en la carpeta `/src` y el código resultante irá en la carpeta `/dist`
+Al ser este proyecto sin frameworks como React o Angular, por defecto no hay un comando para correr un servidor y hacer cambios en caliente. Tuve que instalar `Vite` de forma manual (pude iniciar un proyecto con el comando `pnpm vite`, pero lo hice así para aprender), así que ahora podemos hacer `pnpm dev` para iniciar un servidor de desarrollo y `pnpm build` para hacer la build con vite.

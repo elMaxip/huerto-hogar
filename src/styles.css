@@ -1,5 +1,16 @@
 :root {
-  --bg-main: #f7f7f7;
+  --color-bg-50: #f7f7f7;
+  --color-bg-100: #e0e0e0;
+  --color-bg-200: #c8c8c8;
+  --color-bg-300: #b1b1b1;
+  --color-bg-400: #9a9a9a;
+  --color-bg-500: #828282;
+  --color-bg-600: #6b6b6b;
+  --color-bg-700: #535353;
+  --color-bg-800: #3c3c3c;
+  --color-bg-900: #242424;
+  --color-bg-950: #0d0d0d;
+  --color-bg-main: #f7f7f7;
 
   /* Para botones, enlaces y elementos interactivos */
   --color-accent-1-50: #ecf9f1;
@@ -61,9 +72,10 @@
 body {
   margin: 0;
   min-height: 100dvh;
-  background-color: var(--bg-main);
+  background-color: var(--color-bg-main);
 
   position: relative;
+  font-family: var(--ff-sans);
 }
 
 body::before {
@@ -75,7 +87,7 @@ body::before {
   width: 100%;
   min-height: 100%;
 
-  background-image: url("../assets/background.webp");
+  background-image: url("./assets/background.webp");
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-position: center top;

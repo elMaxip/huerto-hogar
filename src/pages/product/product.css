@@ -1,0 +1,142 @@
+section {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+#back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+#back:hover {
+  color: var(--color-accent-highlight);
+  transition-duration: 0.2s;
+}
+
+#detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.5rem;
+
+  background-color: var(--color-bg-main);
+  border: 1px solid var(--color-bg-100);
+  border-radius: var(--border-radius-md);
+  padding: 2rem;
+}
+
+#detail[hidden],
+#not-found[hidden] {
+  display: none;
+}
+
+#image-container {
+  position: relative;
+  border: 1px solid var(--color-bg-100);
+  border-radius: var(--border-radius-md);
+  padding: 1rem;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+#discount {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background-color: var(--color-accent-warm);
+  padding: 5px 15px;
+  border-bottom-left-radius: var(--border-radius-md);
+  font-weight: 600;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#category {
+  color: var(--color-bg-600);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--ff-serif);
+  color: var(--color-accent-heading);
+}
+
+#prices {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+#price {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#discount-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-accent-1-700);
+}
+
+#unit {
+  color: var(--color-bg-600);
+}
+
+#description {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-secundary);
+}
+
+#stock {
+  font-weight: 500;
+}
+
+#stock.out {
+  color: var(--color-error);
+}
+
+#actions {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+#quantity-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+#quantity {
+  width: 5rem;
+  padding: 10px 15px;
+  border: 1px solid var(--color-bg-200);
+  border-radius: var(--border-radius-sm);
+  outline: none;
+  font-family: var(--ff-sans);
+}
+
+@media (max-width: 60rem) {
+  section {
+    padding: 1.5rem;
+  }
+
+  #detail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

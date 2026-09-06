@@ -1,0 +1,15 @@
+article {
+  max-width: 100dvw;
+  overflow: auto;
+}
+
+article div {
+  padding-inline: 1.5rem;
+}
+
+#featured-products,
+#promotions,
+#categories {
+  display: flex;
+  gap: 1.5rem;
+}

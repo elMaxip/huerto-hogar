@@ -1,0 +1,39 @@
+<section>
+    <header>
+        <h1>Carrito de compras</h1>
+        <button id="clear" type="button" hidden>Eliminar carrito</button>
+    </header>
+
+    <p id="message" hidden></p>
+
+    <p id="empty" hidden>Tu carrito está vacío. <a href="/">Ver productos</a></p>
+
+    <ul id="items"></ul>
+
+    <footer id="summary" hidden>
+        <div id="total-row">
+            <span>Total</span>
+            <strong id="total"></strong>
+        </div>
+        <primary-button id="buy">Comprar productos</primary-button>
+    </footer>
+
+    <template id="item-template">
+        <li>
+            <a class="image-link">
+                <img alt="">
+            </a>
+            <div class="info">
+                <a class="name-link"></a>
+                <span class="category"></span>
+                <span class="unit-price"></span>
+            </div>
+            <label class="quantity-label">
+                Cantidad
+                <input class="quantity" type="number" min="1" step="1">
+            </label>
+            <span class="subtotal"></span>
+            <button class="remove" type="button">Eliminar</button>
+        </li>
+    </template>
+</section>

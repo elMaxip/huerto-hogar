@@ -67,6 +67,20 @@
 
   --text-primary: #333333;
   --text-secundary: #666666;
+
+  /* Para mensajes de validación y acciones destructivas */
+  --color-error: #c0392b;
+  --color-error-bg: #fdecea;
+
+  --border-radius-sm: 0.2rem;
+  --border-radius-md: 0.5rem;
+
+  /* Elevación y movimiento de las tarjetas */
+  --shadow-sm: 0 1px 2px rgb(13 13 13 / 6%);
+  --shadow-md: 0 10px 24px rgb(13 13 13 / 14%);
+  --transition-fast: 0.2s ease;
+
+  --btn-border-radius: var(--border-radius-sm);
 }
 
 body {
@@ -76,6 +90,7 @@ body {
 
   position: relative;
   font-family: var(--ff-sans);
+  color: var(--text-primary);
 }
 
 body::before {
